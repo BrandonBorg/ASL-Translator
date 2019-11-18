@@ -9,3 +9,7 @@ test_csv_name = '../asl_alphabet_test/asl_alphabet_test.csv'
 #Uncomment to create csv
 #DataImport.img_to_csv(test_dir_name, test_csv_name)
 
+x_test, y_test = DataImport.get_data(train_csv_name)
+
+print (x_test, y_test)
+
