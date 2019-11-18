@@ -3,7 +3,7 @@ import os
 import csv
 from PIL import Image
 
-size = 48,48
+size = 48, 48
 
 
 # Accepts int, returns string value of corresponding class name
@@ -31,3 +31,15 @@ def img_to_csv(dir_name, csv_name):
             with open(csv_name, "a", newline='') as fp:
                 wr = csv.writer(fp)
                 wr.writerow(img)
+
+
+def get_data(csv_name):
+    num_classes = 29
+    num_inputs = 48 ** 48
+
+    data_set = np.loadtxt(csv_name, delimiter=',')
+
+    x_data = data_set[:, 0:num_inputs]  # extract the pixel values
+    y_data = data_set[:, num_inputs:num_inputs + num_classes] # extract the class
+
+    return [x_data, y_data]
