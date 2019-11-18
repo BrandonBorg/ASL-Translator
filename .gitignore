@@ -1,2 +1,4 @@
 
 asl_alphabet_train/asl_alphabet_train.csv
+
+*.pyc
