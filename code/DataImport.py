@@ -3,9 +3,6 @@ import os
 import csv
 from PIL import Image
 
-train_dir_name = '../asl_alphabet_train/asl_alphabet_train'
-train_csv_name = "../asl_alphabet_train/asl_alphabet_train.csv"
-class_names = os.listdir(train_dir_name)
 size = 48,48
 
 
@@ -14,10 +11,11 @@ def get_class_name(class_num):
     return class_names[class_num]
 
 
-def img_to_csv():
+def img_to_csv(dir_name, csv_name):
+    class_names = os.listdir(dir_name)
 
     for c in class_names:
-        dir = train_dir_name + '/' + c
+        dir = dir_name + '/' + c
 
         img_class = np.zeros(len(class_names))
         img_class[class_names.index(c)] = 1
@@ -30,6 +28,6 @@ def img_to_csv():
             img = np.array(img).flatten()
             img = np.append(img, img_class)
 
-            with open(train_csv_name, "a", newline='') as fp:
+            with open(csv_name, "a", newline='') as fp:
                 wr = csv.writer(fp)
                 wr.writerow(img)
