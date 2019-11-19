@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16ec95fb-535f-45bb-8499-7f88f02f369d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/code/ModelLearning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ASL-Translator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ASL-Translator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/DataImport.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/DataImport.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/ModelLearning.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/ModelLearning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/test_model.h5" beforeDir="false" afterPath="$PROJECT_DIR$/code/test_model.h5" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +28,7 @@
   </component>
   <component name="ProjectId" id="1Tn79SB2RLubzxv1X6jBSg96g7L" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/env" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -48,7 +51,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\Brandon\Anaconda3\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\bb-li\Anaconda3\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
