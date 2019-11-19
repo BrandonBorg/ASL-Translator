@@ -11,6 +11,10 @@ def get_class_name(class_num):
     return class_names[class_num]
 
 
+def get_class_index(c):
+    return np.argmax(c)
+
+
 def img_to_csv(dir_name, csv_name):
     class_names = os.listdir(dir_name)
 
@@ -40,6 +44,10 @@ def get_data(csv_name):
     data_set = np.loadtxt(csv_name, delimiter=',')
 
     x_data = data_set[:, 0:num_inputs]  # extract the pixel values
-    y_data = data_set[:, num_inputs:num_inputs + num_classes] # extract the class
+    y_data = data_set[:, num_inputs:num_inputs + num_classes]# extract the class
 
-    return x_data, y_data
+    y_clean = np.zeros(y_data.shape[0])
+    for i, c in enumerate(y_data):
+        y_clean[i] = get_class_index(c)
+
+    return x_data, y_clean
