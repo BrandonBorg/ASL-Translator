@@ -15,6 +15,6 @@ def train_model(x_train, y_train):
                   loss='sparse_categorical_crossentropy',
                   metrics=['accuracy'])
 
-    model.fit(x_train, y_train, epochs=10) # seems like its capping at 3 at 96%
+    model.fit(x_train, y_train, epochs=5) # seems like its capping at 5 at 98%
 
     model.save('test_model.h5')
