@@ -1,7 +1,9 @@
 import DataImport
 import ModelLearning
+import pickle
 import timeit
 from tensorflow.python.client import device_lib
+from tensorflow import keras
 
 print ('start')
 
@@ -13,11 +15,34 @@ test_csv_name = '../asl_alphabet_test/asl_alphabet_test.csv'
 
 #Uncomment to create csv
 #DataImport.img_to_csv(train_dir_name, train_csv_name)
-
-x_train, y_train = DataImport.get_data(train_csv_name)
-print(x_train.shape, y_train.shape)
+#DataImport.img_to_csv(test_dir_name, test_csv_name)
 
 
-ModelLearning.train_model(x_train, y_train)
+# --------------------TRAIN------------------------ #
+
+# pull from csv (takes long)
+#x_train, y_train = DataImport.get_data(train_csv_name)
+#x_test, y_test = DataImport.get_data(test_csv_name)
 
 
+# pull from pickle (is fast)
+#with open('train.pickle', 'rb') as f:
+#    x_train, y_train = pickle.load(f)
+
+# save array to pickle after pulling from csv
+#with open('train.pickle', 'wb') as f:
+    #pickle.dump([x_train, y_train], f)
+
+
+#ModelLearning.train_model(x_train, y_train)
+
+# ---------------------TEST-------------------------- #
+
+#print(x_train.shape, y_train.shape)
+
+#model = keras.models.load_model('64_32_Conv_4epoch.h5')
+
+#pred = model.predict_classes(x_test)
+
+#for i in range(0, len(y_test)):
+#    print(y_test[i])

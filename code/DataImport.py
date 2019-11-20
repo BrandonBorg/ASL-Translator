@@ -4,11 +4,12 @@ import csv
 from PIL import Image
 
 size = 48, 48
-
+class_names = ['A', 'B', 'C', 'D', 'del', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'nothing', 'O', 'P', 'Q',
+               'R', 'S', 'space' 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
 # Accepts int, returns string value of corresponding class name
 def get_class_name(class_num):
-    return class_names[class_num]
+    return class_names[int(class_num)]
 
 
 def get_class_index(c):
@@ -17,6 +18,7 @@ def get_class_index(c):
 
 def img_to_csv(dir_name, csv_name):
     class_names = os.listdir(dir_name)
+    print(class_names)
 
     for c in class_names:
         dir = dir_name + '/' + c
