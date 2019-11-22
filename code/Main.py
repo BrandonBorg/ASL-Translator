@@ -22,7 +22,7 @@ test_csv_name = '../asl_alphabet_test/asl_alphabet_test.csv'
 
 # pull from csv (takes long)
 #x_train, y_train = DataImport.get_data(train_csv_name)
-x_test, y_test = DataImport.get_data(test_csv_name)
+x_train, y_train= DataImport.get_data(test_csv_name)
 
 # save array to pickle after pulling from csv
 #with open('train.pickle', 'wb') as f:
@@ -30,7 +30,7 @@ x_test, y_test = DataImport.get_data(test_csv_name)
 
 # pull from pickle (is fast)
 with open('train.pickle', 'rb') as f:
-    x_train, y_train = pickle.load(f)
+    x_test, y_test = pickle.load(f)
 
 
 

@@ -53,7 +53,7 @@ def train_model(x_train, y_train):
                   loss='sparse_categorical_crossentropy',
                   metrics=['accuracy'])
 
-    hist = model.fit(x_train, y_train, epochs=10)
+    hist = model.fit(x_train, y_train, epochs=50)
 
     print(hist.history)
-    model.save('CNN_POOLING_TESTING.h5')
+    model.save('CNN_POOLING_TESTING2.h5')
