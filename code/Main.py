@@ -22,26 +22,26 @@ test_csv_name = '../asl_alphabet_test/asl_alphabet_test.csv'
 
 # pull from csv (takes long)
 #x_train, y_train = DataImport.get_data(train_csv_name)
-x_test, y_test = DataImport.get_data(test_csv_name)
+x_train, y_train= DataImport.get_data(test_csv_name)
 
 # save array to pickle after pulling from csv
 #with open('train.pickle', 'wb') as f:
     #pickle.dump([x_train, y_train], f)
 
 # pull from pickle (is fast)
-#with open('train.pickle', 'rb') as f:
-    #x_train, y_train = pickle.load(f)
+with open('train.pickle', 'rb') as f:
+    x_test, y_test = pickle.load(f)
 
 
 
 
-#ModelLearning.train_model(x_train, y_train)
+ModelLearning.train_model(x_train, y_train)
 
 # ---------------------TEST-------------------------- #
 
 #print(x_train.shape, y_train.shape)
 
-model = keras.models.load_model('3_pool_CNN_4epoch.h5')
+model = keras.models.load_model('CNN_POOLING_TESTING.h5')
 
 model.evaluate(x_test, y_test)
 

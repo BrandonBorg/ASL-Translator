@@ -31,7 +31,7 @@ def img_to_csv(dir_name, csv_name):
         for file in os.listdir(dir):
             img = Image.open(dir + '/' + file).convert('L')
             img.thumbnail(size, Image.ANTIALIAS)
-            img = np.array(img).flatten()
+            img = np.array(img).flatten()/255
             img = np.append(img, img_class)
             with open(csv_name, "a", newline='') as fp:
                 wr = csv.writer(fp)
