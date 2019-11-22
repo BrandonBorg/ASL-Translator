@@ -33,7 +33,6 @@ def img_to_csv(dir_name, csv_name):
             img.thumbnail(size, Image.ANTIALIAS)
             img = np.array(img).flatten()
             img = np.append(img, img_class)
-            print(img.shape)
             with open(csv_name, "a", newline='') as fp:
                 wr = csv.writer(fp)
                 wr.writerow(img)

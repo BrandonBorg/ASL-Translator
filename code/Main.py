@@ -8,7 +8,7 @@ from tensorflow import keras
 print ('start')
 
 train_dir_name = '../asl_alphabet_train/asl_alphabet_train'
-train_csv_name = '../asl_alphabet_train/asl_alphabet_train22.csv'
+train_csv_name = '../asl_alphabet_train/asl_alphabet_train.csv'
 
 test_dir_name = '../asl_alphabet_test/asl_alphabet_test'
 test_csv_name = '../asl_alphabet_test/asl_alphabet_test.csv'
@@ -24,14 +24,15 @@ test_csv_name = '../asl_alphabet_test/asl_alphabet_test.csv'
 #x_train, y_train = DataImport.get_data(train_csv_name)
 x_test, y_test = DataImport.get_data(test_csv_name)
 
-
-# pull from pickle (is fast)
-#with open('train.pickle', 'rb') as f:
-#    x_train, y_train = pickle.load(f)
-
 # save array to pickle after pulling from csv
 #with open('train.pickle', 'wb') as f:
     #pickle.dump([x_train, y_train], f)
+
+# pull from pickle (is fast)
+#with open('train.pickle', 'rb') as f:
+    #x_train, y_train = pickle.load(f)
+
+
 
 
 #ModelLearning.train_model(x_train, y_train)
@@ -40,7 +41,7 @@ x_test, y_test = DataImport.get_data(test_csv_name)
 
 #print(x_train.shape, y_train.shape)
 
-model = keras.models.load_model('64_32_Conv_4epoch.h5')
+model = keras.models.load_model('3_pool_CNN_4epoch.h5')
 
 model.evaluate(x_test, y_test)
 

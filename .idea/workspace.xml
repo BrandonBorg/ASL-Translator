@@ -3,36 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="16ec95fb-535f-45bb-8499-7f88f02f369d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/A/A_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/B/B_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/C/C_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/D/D_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/E/E_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/F/F_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/G/G_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/H/H_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/I/I_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/J/J_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/K/K_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/L/L_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/M/M_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/N/N_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/O/O_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/P/P_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/Q/Q_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/R/R_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/S/S_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/T/T_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/U/U_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/V/V_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/W/W_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/X/X_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/Y/Y_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/Z/Z_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/nothing/nothing_test.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asl_alphabet_test/asl_alphabet_test/space/space_test.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/code/DataImport.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/DataImport.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/ModelLearning.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/ModelLearning.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,14 +41,14 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Main" type="PythonConfigurationType" factoryName="Python">
       <module name="ASL-Translator" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\bb-li\Anaconda3\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\Brandon\Anaconda3\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -89,11 +62,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.Main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
