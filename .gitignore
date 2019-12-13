@@ -7,3 +7,4 @@ asl_alphabet_train/asl_alphabet_train.csv
 asl_alphabet_test/asl_alphabet_test.csv
 
 *.pickle
+ego_hands_images/
